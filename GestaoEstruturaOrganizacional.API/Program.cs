@@ -34,6 +34,13 @@ builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 
 // Add Services
 builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<IUnitService, UnitService>();
+builder.Services.AddScoped<IAreaService, AreaService>();
+builder.Services.AddScoped<ISectorService, SectorService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IJobPositionService, JobPositionService>();
+builder.Services.AddScoped<IEPIService, EPIService>();
+builder.Services.AddScoped<IRiskService, RiskService>();
 
 var app = builder.Build();
 
